@@ -4,7 +4,7 @@ MODELS_DIR="$ROOT_DIR/models"
 cd /home/webui
 
 # item generation script
-git clone https://github.com/adjarar/rpg_item_generation.git
+git clone https://github.com/adjarar/rpg_img_generate.git
 
 # copy webui settings
 git clone https://github.com/adjarar/webui-settings.git
