@@ -23,6 +23,7 @@ wget -q -P $MODELS_DIR/VAE \
         https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.ckpt \
         https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
         
-# SD models  
+# download SD models
+cd $MODELS_DIR/Stable-diffusion
 gdown https://civitai.com/api/download/models/67584 && \
 mv 67584 fantassifiedIcons_fantassifiedIconsV20.safetensors
