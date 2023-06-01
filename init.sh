@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/vast-ai/vast-python/master/vast.py -O vas
 
 # copy webui settings
 git clone https://github.com/adjarar/webui-settings.git
-mv webui-settings/* stable-diffusion-webui
+mv -f webui-settings/* stable-diffusion-webui
 rm -rf webui-settings
 
 # Install extensions
