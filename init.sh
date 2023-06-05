@@ -19,6 +19,7 @@ cd /root
 
 # copy webui settings
 git clone https://github.com/adjarar/webui-settings.git
+chmod +x webui-settings/webui.sh
 mv -f webui-settings/* $ROOT_DIR
 rm -rf webui-settings
 
