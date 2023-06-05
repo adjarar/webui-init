@@ -1,4 +1,4 @@
-ROOT_DIR="/stable-diffusion-webui"
+ROOT_DIR="/root/stable-diffusion-webui"
 MODELS_DIR="$ROOT_DIR/models"
 
 
@@ -12,11 +12,14 @@ git clone https://github.com/adjarar/rpg_img_generate.git
 
 # download the vastai script
 cd rpg_img_generate
-wget https://raw.githubusercontent.com/vast-ai/vast-python/master/vast.py -O vast; chmod +x vast;
+wget https://raw.githubusercontent.com/vast-ai/vast-python/master/vast.py -O vast
+chmod +x vast
+
+cd /root
 
 # copy webui settings
 git clone https://github.com/adjarar/webui-settings.git
-mv -f webui-settings/* stable-diffusion-webui
+mv -f webui-settings/* $ROOT_DIR
 rm -rf webui-settings
 
 # download SD models
