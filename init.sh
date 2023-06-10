@@ -25,5 +25,10 @@ rm -rf webui-settings
 
 # download SD models
 cd $MODELS_DIR/Stable-diffusion
-gdown https://civitai.com/api/download/models/67584 && \
-mv 67584 fantassifiedIcons_fantassifiedIconsV20.safetensors
+wget https://civitai.com/api/download/models/43970 --content-disposition
+
+cd $MODELS_DIR/Lora
+wget https://civitai.com/api/download/models/58221 --content-disposition
+
+cd $MODELS_DIR/VAE
+wget https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt
