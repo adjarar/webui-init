@@ -8,7 +8,7 @@ cat ~/.ssh/authorized_keys | md5sum | awk '{print $1}' > ssh_key_hv; echo -n $VA
 cd $ROOT_DIR
 
 # item generation script
-git clone https://github.com/adjarar/rpg_img_generate.git
+git clone https://github.com/adjarar/create-textures.git
 
 # download the vastai script
 cd rpg_img_generate
